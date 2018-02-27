@@ -1,5 +1,5 @@
 export class Hero {
-    constructor(private _id: number, private _name: string){}
+    constructor(private _id: number, private _name: string) {}
     get id() {
         return this._id;
     }

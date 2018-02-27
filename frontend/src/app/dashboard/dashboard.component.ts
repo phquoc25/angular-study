@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class DashboardComponent implements OnInit {
   private _heroes: Hero[];
 
-  constructor(private heroService: HeroService) { 
+  constructor(private heroService: HeroService) {
   }
 
   ngOnInit() {
