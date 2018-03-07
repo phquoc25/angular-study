@@ -1,10 +1,23 @@
 import { TestBed, async } from '@angular/core/testing';
+import { Component } from '@angular/core'
+
 import { AppComponent } from './app.component';
+import { RouterLinkDirectiveStub } from './router-link-directive-stub';
+
+@Component({selector: 'app-messages', template: ''})
+class AppMessagesStubComponent {}
+
+@Component({selector: 'router-outlet', template: ''})
+class RouterOutletStubComponent { }
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        AppMessagesStubComponent,
+        RouterOutletStubComponent,
+        RouterLinkDirectiveStub
       ],
     }).compileComponents();
   }));
@@ -25,3 +38,4 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to app!');
   }));
 });
+ 
