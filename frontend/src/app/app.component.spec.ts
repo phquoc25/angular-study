@@ -1,5 +1,5 @@
 import { TestBed, async } from '@angular/core/testing';
-import { Component } from '@angular/core'
+import { Component } from '@angular/core';
 import { By } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -11,7 +11,7 @@ class AppMessagesStubComponent {}
 @Component({selector: 'router-outlet', template: ''})
 class RouterOutletStubComponent { }
 
-describe('AppComponent', () => {
+fdescribe('AppComponent', () => {
   let fixture;
   let app;
   let linkDes;
@@ -25,7 +25,7 @@ describe('AppComponent', () => {
         RouterLinkDirectiveStub
       ],
     }).compileComponents();
-    
+  
     fixture = TestBed.createComponent(AppComponent);
     app = fixture.debugElement.componentInstance;
 
@@ -63,4 +63,3 @@ describe('AppComponent', () => {
     expect(heroesLink.navigatedTo).toBe('/heroes');
   });
 });
- 

@@ -42,6 +42,7 @@
 						<arguments>install</arguments>
 						</configuration>
 					</execution>
+					<!--
 					<execution>
 						<id>yarn lint</id>
 						<goals>
@@ -50,7 +51,8 @@
 						<configuration>
 						<arguments>lint</arguments>
 						</configuration>
-					</execution>
+					</execution> 
+					-->
 					<execution>
 						<id>yarn build</id>
 						<goals>
